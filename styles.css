@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --bgColor: #f0f2f5;
+    --primary: #2c76f2;
+    --secPrimary: #6595e6;
+    --success: #28a745;
+    --dark: #626262;
+    --secFont: 'Montserrat', sans-serif;
+    --thirdFont: 'Noto Sans JP';
+}
+@font-face {
+    font-family: "facebook-bold";
+    src: url("./font/bold.otf");
+}
+@font-face {
+    font-family: "facebook-medium";
+    src: url("./font/medium.otf");
+}
+@font-face {
+    font-family: "facebook-light";
+    src: url("./font/light.otf");
+}
+body{
+    background-color: var(--bgColor);
+    height: 100vh;
+}
+body > div {
+    margin: 10% auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+body > div h1 {
+    color: var(--primary);
+    font-family: "facebook-bold";
+    font-size: 4.5rem;
+}
+body > div h3 {
+    color: var(--dark);
+    font-family: var(--secFont);
+    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+}
+body > div div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+div .card {
+    background-color: white;
+    padding: 1.7rem;
+    display: flex;
+    border-radius: 8px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.117) 3px 10px 20px 0px;
+}
+input{
+    width: 380px;
+    padding: 0.85rem;
+    font-family: var(--secFont);
+    font-size: 1.1rem;
+    font-weight: 400;
+    border: #818181 0.9px solid;
+    border-radius: 4px;
+}
+div .card .form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+button{
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    padding: 0.9rem;
+    font-family: var(--secFont) ;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+a{
+    text-decoration: none;
+    color: var(--secPrimary);
+    font-family: var(--thirdFont);
+    margin: 0px auto;
+    line-height: 1;
+}
+hr{
+    color: var(--dark);
+    border: #b8b8b8 0.3px solid;
+    border-radius: 1px;
+    margin: 20px 0%;
+}
+button:last-child{
+    background-color: var(--success);
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 100;
+}
+p{
+    color: var(--dark);
+    font-family: var(--secFont);
+    font-size: 0.9rem;
+    margin: 25px auto;
+    width: fit-content;
+    font-weight: 500;
+}
+img {
+    max-width: 301px;
+    height: auto;
+    margin-left: -30px;
+  }
+  
